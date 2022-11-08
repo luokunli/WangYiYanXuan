@@ -1,0 +1,771 @@
+@charset "UTF-8";
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  font-size: 14px;
+  color: #333;
+  font-family: "微软雅黑";
+  background-color: #fff;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  border: none;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #b4a078;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+}
+
+label {
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0;
+}
+
+.center {
+  width: 1090px;
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.scaleImg img {
+  transition: 1s ease-out;
+  transform: scale(1);
+}
+
+.scaleImg:hover img {
+  transform: scale(1.2);
+}
+
+.original {
+  background-color: #f4f4f4;
+}
+
+/* head ------------------------------------*/
+
+
+#head {
+  box-shadow: 0 2px 2px #f3f3f3;
+  background-color: #fff;
+
+}
+
+#head .head {
+
+  font-size: 12px;
+  margin: 0 auto;
+  line-height: 36px;
+  background: #333;
+}
+
+#head .left {
+  color: #d3d3d3;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+#head .right ul li {
+  float: left;
+  cursor: pointer;
+}
+
+
+#head .right>ul>li>a {
+  color: #ccc;
+  font-size: 12px;
+  /* font-weight: bold; */
+  border-right: #d3d3d3 solid 1px;
+  padding: 0 10px;
+}
+
+#head .right ul li a {
+  color: #ccc;
+}
+
+#head .customer {
+  position: relative;
+  z-index: 5;
+}
+
+#head .customer ul {
+  display: none;
+  position: absolute;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 0 3px rgb(0 0 0 / 20%);
+}
+
+#head .customer li {
+  width: 100%;
+  float: none;
+  padding: 0;
+  display: block;
+  text-align: center;
+
+}
+
+/* #head .customer li:hover a{
+color: #333;
+
+} */
+
+#head .right .customer li a {
+  border-bottom: 1px solid #d3d3d3;
+  display: block;
+  line-height: 36px;
+  margin: 0 15px;
+  text-align: center;
+  color: #999;
+}
+
+#head .right ul>li>a:hover {
+  color: #fff;
+}
+
+#head .right .customer li:hover a {
+  color: #b4a078;
+}
+
+#head .right .noborder {
+  border: none;
+}
+
+#head .right .down {
+  position: relative;
+
+  position: relative;
+  z-index: 10;
+}
+
+
+
+
+
+
+
+#head .right .down div {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  left: -20px;
+  top: 38px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+  padding-bottom: 5px;
+  color: #999;
+
+}
+
+#head .right .down div p:nth-child(2) {
+  line-height: 20px;
+}
+
+/* #head .right .down img {
+
+  vertical-align: middle;
+  margin: 0;
+} */
+
+
+#head .right .down a img {
+  margin: 0 10px;
+}
+
+#head .right .down .app {
+  padding-left: 25px;
+  background: url("../images/ico_01.png") 10px center no-repeat;
+  vertical-align: middle;
+
+}
+
+#head .right .down:hover>div {
+  display: block;
+}
+
+
+
+#head .customer:hover ul {
+  display: block;
+}
+
+#head .customer ul li:nth-child(3) {
+  position: relative;
+}
+
+#head .customer ul li:nth-child(3):hover div {
+  display: block;
+}
+
+#head .customer ul li:nth-child(3) span {
+  position: absolute;
+  line-height: 36px;
+  /* vertical-align: middle; */
+  left: 65px;
+  top: 0px;
+  font-size: 12px;
+  color: #999;
+
+}
+
+#head .customer div {
+  display: none;
+  position: absolute;
+  text-align: center;
+  left: 85px;
+  background-color: #fff;
+  top: 0;
+  height: 57px;
+  width: 110px;
+  line-height: 20px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .6);
+}
+
+#head .customer div p:nth-child(1) {
+  color: #999;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+#head .customer div p:nth-child(2) {
+  color: #999;
+
+  font-size: 12px;
+}
+
+#head .customer>.icon-caret-up {
+  position: absolute;
+
+  left: 0;
+  color: #fff;
+
+}
+
+
+
+#head .subNav ul {
+  /* display: none; */
+}
+
+
+/* ----------------logo----------------- */
+#head .logoAndSearch {
+  background-color: #fff;
+}
+
+#head .logoAndSearch .center {
+
+  height: 60px;
+  margin: 40px auto;
+}
+
+#head .logoAndSearch .logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  height: 60px;
+  cursor: pointer;
+}
+
+#head .logoAndSearch .search {
+  float: right;
+  color: #999;
+  margin: 0 30px 0 0;
+  line-height: 60px;
+}
+
+#head .logoAndSearch .search input {
+  color: #b4a078;
+  ;
+  border: none;
+  border-bottom: 1px solid #b4a078;
+  background-color: #fff;
+  width: 200px;
+  height: 20px;
+  outline: none;
+  padding: 5px;
+  font-size: 12px;
+}
+
+#head .logoAndSearch .search a {
+  font-size: 0;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+}
+
+/* ----------------nav----------------- */
+#head .nav {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+#head .nav .navBar ul {
+  font-size: 0;
+  text-align: center;
+  height: 50px;
+  width: 1090px;
+  /* margin: 0 auto; */
+}
+
+#head .subNav ul {
+  font-size: 0;
+  text-align: center;
+  display: none;
+
+}
+
+#head .navBar li {
+  display: inline-block;
+margin: 0 28px;
+
+  line-height: 50px;
+  font-size: 14px;
+}
+#head .nav .subNav li {
+  display: inline-block;
+  padding: 0 30px;
+  padding: 0 30px;
+
+  font-size: 14px;
+}
+
+#head .nav ul   #spe {
+  margin: 0;
+  padding: 0;
+  color: #ccc;
+
+
+}
+
+#head .nav>div {
+  position: relative;
+}
+
+#head .nav a {
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 5px;
+
+}
+
+/* #head .nav li:hover a {
+
+  border-bottom: 3px solid #b4a078;
+} */
+
+#head .nav ul .active {
+  border-bottom: 3px solid #b4a078;
+}
+
+#head .nav .carWarp {
+  line-height: 50px;
+  position: absolute;
+  right: 0;
+  top: -98px;
+  height: 20px;
+  width: 20px;
+  background-color: #ccc;
+  cursor: pointer;
+
+}
+
+#head .nav .carWarp .car {
+  background-image: url(../images/ico_04.gif);
+  line-height: 50px;
+  height: 20px;
+  width: 20px;
+  background-color: #ccc;
+}
+
+#head .nav i {
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-color: #d4282d;
+  color: #fff;
+  font: 12px/20px "微软雅黑";
+
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
+
+#head .subNav img {
+  height: 44px;
+  width: 44px;
+  display: block;
+  margin: 5px auto;
+
+}
+
+/* 吸顶导航 */
+#head #navFix{
+  /* height: 50px; */
+  line-height: 50px;
+  vertical-align: middle;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+
+}
+#head #navFix .navBar{
+padding-left: 115px;
+background: url("../images/smallLogo.gif") left center no-repeat;
+
+}
+#head #navFix .navBar a{
+  color: #000;
+}
+#head #navFix .navBar li:nth-of-type(11),
+#head #navFix .navBar li:nth-of-type(12),
+#head #navFix .navBar li:nth-of-type(13){
+  display: none;
+}
+#head #navFix .carWarp{
+  top: 15px;
+right: 30px;
+ 
+}
+/* #head #navFix .carWarp .car{
+
+position:absolute;
+/* top: -15px; */
+
+
+#head #navFix .login{
+  /* display: none; */
+  position: absolute;
+  top: 3px;
+right: 70px;
+line-height: 50px;
+z-index: 120;
+
+}
+#head #navFix .login div{
+  position: absolute;
+  left: -30px;
+  top: 45px;
+  /* height: 40px; */
+  text-align: center;
+  line-height: 30px;
+ border: 1px solid #888;
+ border-radius: 5px;
+  background-color: #fff;
+  width: 80px;
+  display: none;
+}
+#head #navFix .login div a{
+  color: #888;
+}
+#head #navFix .login div a:hover{
+  
+  color: #B4A078;
+}
+#head #navFix .login:hover div{
+  display: block;
+}
+#head .login{
+  display: none;
+}
+#head .login span{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url(../images/icon-yxtop.webp) 0 -786px no-repeat;
+
+}
+
+
+
+
+/* 底部------------------------- */
+
+
+
+
+#footer {
+  padding-top: 20px;
+}
+
+#footer .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#footer .top .box {
+  width: 360px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+
+}
+
+#footer .top h4 {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+#footer .top .phone {
+  font-size: 26px;
+  color: #333;
+  margin: 0 0 20px;
+}
+
+#footer .top .workTime {
+  font-size: 14px;
+  color: #333;
+}
+
+#footer .top .customer a {
+  display: inline-block;
+  width: 100px;
+  line-height: 26px;
+  border: 1px solid #333;
+  margin: 20px 10px;
+
+}
+
+#footer .top .customer a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+#footer .box:nth-of-type(2) p {
+  text-align: left;
+  color: #333;
+  font-size: 14px;
+  text-indent: 28px;
+}
+
+#footer .box:nth-of-type(2) ul {
+  margin-top: 30px;
+  text-align: left;
+}
+
+#footer .box:nth-of-type(2) li {
+  display: inline-block;
+  margin: 0 8px;
+
+
+}
+
+#footer .box:nth-of-type(3) p {
+  color: #B4A078;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* 底部声明------------ */
+
+#footer .bottom {
+  background: #414141;
+  width: 100%;
+}
+
+#footer .bottom .icon {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  color: #fff;
+  padding: 40px 0;
+  height: 51px;
+
+  line-height: 51px;
+  border-bottom: 1px solid #4f4f4f;
+}
+
+#footer .bottom .icon div {
+  padding-left: 70px;
+
+}
+
+
+
+
+
+#footer .bottom .icon div:nth-of-type(1) {
+  background: url("../images/ico_08.gif") left no-repeat;
+}
+
+#footer .bottom .icon div:nth-of-type(2) {
+  background: url("../images/ico_09.gif") left no-repeat;
+}
+
+#footer .bottom .icon div:nth-of-type(3) {
+  background: url("../images/ico_10.gif") left no-repeat;
+}
+
+#footer .bottom .statement {
+  padding: 30px 0;
+  text-align: center;
+  color: #999;
+}
+
+#footer .bottom .statement ul {
+  display: flex;
+  justify-content: center;
+  color: #999;
+
+}
+
+#footer .bottom .statement li {
+  margin-right: 0 10px;
+  border-right: 1px solid #999;
+  padding: 0 10px;
+
+}
+
+#footer .bottom .statement li:last-child {
+  border: none;
+}
+
+#footer .bottom .statement a {
+  color: #999;
+}
+
+
+/* 固定侧边导航 */
+#aside {
+  position: fixed;
+  bottom: 20px;
+  right: 1%;
+  width: 60px;
+  background-color: #fff;
+  padding: 5px;
+}
+
+#aside .box {
+  padding-top: 30px;
+  text-align: center;
+  margin: 10px 0;
+
+}
+
+#aside a:nth-of-type(1) .box {
+  background: url(../images/ico_11.gif) top no-repeat;
+}
+
+#aside a:nth-of-type(2) .box {
+  background: url(../images/ico_12.gif) top no-repeat;
+}
+
+#aside a:nth-of-type(3) .box {
+  background: url(../images/ico_13.gif) top no-repeat;
+}
+
+
+
+
+
+
+#aside .back {
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  height: 45px;
+  box-sizing: border-box;
+  background: #999 url(../images/ico_14.gif) center 8px no-repeat;
+}
+
+#aside .back:hover {
+  background-color: #b4a078;
+
+}
+#aside .asideBoxImg:hover + img{
+  display: block;
+
+}
+#aside>img{
+  height: 120px;
+  width: 120px;
+  position:absolute;
+  top: 50px;
+  left: -125px;
+  display: none;
+  border: 1px solid #333;
+}
+
+
+
+
+/* 吸顶导航样式----------------- */
+
+/* #head #navFix{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  
+  background-color:#fff;
+
+} */
