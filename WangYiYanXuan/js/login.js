@@ -145,7 +145,16 @@ window.onload = function () {
 
 
     }
+    function goTop() {
+        var aside = document.querySelector("#aside");
+        var asideTop = document.querySelector("#aside").querySelector(".asideTop");
+        asideTop.addEventListener("click", function () {
+            // alert("1")
+            goback(window, 0);
+        })
+    }
 
+    goTop();
     nav_list();
     indexScroll();
     loginChange();
