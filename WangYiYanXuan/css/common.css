@@ -136,7 +136,7 @@ td {
 #head .right ul li a {
   color: #ccc;
 }
-
+537
 #head .customer {
   position: relative;
   z-index: 5;
@@ -538,6 +538,7 @@ z-index: 120;
   display: inline-block;
   height: 20px;
   width: 20px;
+  cursor: pointer;
   background: url(../images/icon-yxtop.webp) 0 -786px no-repeat;
 
 }
