@@ -18,12 +18,12 @@ window.onload = function () {
                 loginBoxs[i].style.display = "none";
                 loginBoxImgs[i].setAttribute("index", i);
             }
-         
+
             if (this.src == "images/computer_small.png") {
-             
+
                 this.src = "images/QRCode_Small.png";
                 loginBoxs[1].style.display = "block";
-            }else{
+            } else {
                 this.src = "images/computer_small.png";
                 loginBoxs[1].style.display = "block";
             }
@@ -43,7 +43,7 @@ window.onload = function () {
             if (this.src == "images/QRCode_Small.png") {
                 this.src = "images/computer_small.png";
                 loginBoxs[0].style.display = "block";
-            }else{
+            } else {
                 this.src = "images/QRCode_Small.png";
                 loginBoxs[0].style.display = "block";
             }
@@ -72,20 +72,81 @@ window.onload = function () {
 
 
 
+    }
+    //吸顶导航
+    function indexScroll() {
+
+        var head = document.querySelector("#head");
+        var nav = head.querySelector('.nav');
+        var login = head.querySelector('.login');
+        var banner = document.querySelector("#banner");
+        var bannerTop = 268;
+        // console.log(bannerTop);
+
+        document.addEventListener("scroll", function () {
+            // console.log(window.pageYOffset);
+            if (window.pageYOffset >= bannerTop) {
+                nav.setAttribute("id", "navFix")
+                login.style.display = "block"
+
+            } else {
+                nav.setAttribute("id", "")
+                login.style.display = "none"
+            }
+        })
+
+    }
 
 
+    // 导航栏选项卡
+
+    function nav_list() {
+        var head = document.querySelector("#head");
+        var nav = head.querySelector('.nav');
+        var navBar = head.querySelector(".navBar");
+        var a = navBar.querySelectorAll("a");
+        var subNav = head.querySelector(".subNav");
+        var ul = subNav.querySelectorAll('ul');
+        var list = [];
+        for (i = 0; i < a.length; i++) {
+            a[i].setAttribute("index", i);
 
 
+            //   鼠标移入
+            a[i].addEventListener("mouseenter", function () {
+                for (i = 0; i < a.length; i++) {
+                    a[i].className = "";
+                }
+                this.className = "active";
+
+                var index = this.getAttribute("index");
+
+                for (i = 0; i < ul.length; i++) {
+                    ul[i].style.display = "none";
 
 
+                }
 
+                ul[index].style.display = "block";
 
+            })
+            //nav鼠标移出
+            nav.addEventListener("mouseleave", function () {
 
+                for (i = 0; i < ul.length; i++) {
+                    ul[i].style.display = "none";
 
+                }
 
+            })
+
+        }
 
 
 
     }
+
+    nav_list();
+    indexScroll();
     loginChange();
 }

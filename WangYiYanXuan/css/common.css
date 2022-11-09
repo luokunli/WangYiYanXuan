@@ -117,7 +117,11 @@ td {
   font-size: 14px;
   font-weight: bold;
 }
-
+#head .left a{
+  color: #d3d3d3;
+  font-size: 14px;
+  font-weight: bold;
+}
 
 #head .right ul li {
   float: left;
@@ -136,7 +140,6 @@ td {
 #head .right ul li a {
   color: #ccc;
 }
-537
 #head .customer {
   position: relative;
   z-index: 5;

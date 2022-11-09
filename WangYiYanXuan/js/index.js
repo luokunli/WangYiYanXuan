@@ -9,7 +9,8 @@ window.onload = function () {
     var nav = head.querySelector('.nav');
     var login = head.querySelector('.login');
     var banner = document.querySelector("#banner");
-    var bannerTop = banner.offsetTop - 90;
+    // var bannerTop = banner.offsetTop - 90;
+    var bannerTop = 268;
     // console.log(bannerTop);
 
     document.addEventListener("scroll", function () {
@@ -37,28 +38,6 @@ window.onload = function () {
     var subNav = head.querySelector(".subNav");
     var ul = subNav.querySelectorAll('ul');
     var list = [];
-    // for (let i = 1; i < a.length - 2; i++) {
-    //   list.push(a[i]);
-    //   // console.log(list);
-    // }
-
-    // for (let i = 0; i < list.length; i++) {
-    //   list[i].index = ul[i].index = i;
-    //   list[i].onmouseenter = ul[i].onmouseenter = function () {
-    //     // console.log(list);
-    //     // nav.style.display = "block";
-    //     ul[this.index].style.display = "block";
-    //   }
-
-    //   nav.onmouseleave = ul[i].onmouseleave = function () {
-
-    //     ul[this.index].style.display = "none";
-    //   }
-
-    // }
-
-
-
     for (i = 0; i < a.length; i++) {
       a[i].setAttribute("index", i);
 
@@ -203,7 +182,7 @@ window.onload = function () {
         })
         circleAuto--;
         if (circleAuto < 0) {
-          circleAuto = circle.children.length-1;
+          circleAuto = circle.children.length - 1;
         }
         circleChange()
       }
