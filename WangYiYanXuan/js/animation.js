@@ -34,10 +34,3 @@ function goback(obj, target, callback) {
     }, 10)
 
 }
-
-
-
-
-
-
-
